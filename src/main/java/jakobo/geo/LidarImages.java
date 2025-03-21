@@ -1,19 +1,23 @@
 package jakobo.geo;
 
-import jakobo.util.ImageWriter;
+import jakobo.util.BufferedImageFactory;
+import jakobo.util.GeoTiffOut;
+import jakobo.util.GridCoverage2DSupport;
+import org.geotools.coverage.grid.GridCoverage2D;
+import org.geotools.coverage.grid.io.AbstractGridCoverage2DReader;
 import org.geotools.coverage.grid.io.AbstractGridFormat;
 import org.geotools.coverage.grid.io.GridFormatFinder;
 import org.geotools.geometry.jts.ReferencedEnvelope;
 import org.geotools.map.GridReaderLayer;
 import org.geotools.map.MapContent;
-import org.geotools.referencing.CRS;
-import org.opengis.referencing.FactoryException;
+import org.geotools.gce.imagemosaic.ImageMosaicReader;
 
 import java.io.*;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import static jakobo.util.CrsFactory.crs;
 import static jakobo.util.RasterStyle.createDefaultRasterStyle;
 
 public final class LidarImages {
@@ -25,25 +29,34 @@ public final class LidarImages {
         this.images = images;
     }
 
-    public List<GridReaderLayer> findLayersForExtent(final ReferencedEnvelope referencedEnvelope) {
+    public GridCoverage2D createLidarImage(final ReferencedEnvelope referencedEnvelope) throws IOException {
         if ((referencedEnvelope.getMaxX() - referencedEnvelope.getMinX()) >= MAX_EXPECTED_SATELLITE_TILE_SIZE_METERS ||
                 (referencedEnvelope.getMaxY() - referencedEnvelope.getMinY()) >= MAX_EXPECTED_SATELLITE_TILE_SIZE_METERS) {
             throw new IllegalArgumentException("Can only collect layers for envelopes less than 4000x4000m");
         }
 
-        return this.images.stream()
+        final GridReaderLayer[] layers = this.images.stream()
                 // find by x
                 .filter(i -> i.getExtent().isYInside(referencedEnvelope.getMinY()) || i.getExtent().isYInside(referencedEnvelope.getMaxY()))
                 .filter(i -> i.getExtent().isXInside(referencedEnvelope.getMinX()) || i.getExtent().isXInside(referencedEnvelope.getMaxX()))
                 .map(i -> createGridReaderLayer(i.getImageFile()))
-                .toList();
+                .toArray(size -> new GridReaderLayer[size]);
+
+        if (layers.length == 1) {
+            return layers[0].getReader().read(null);
+        } else {
+            final ImageMosaicReader mosaicReader = new ImageMosaicReader(layers);
+            final GridReaderLayer mosaicReaderLayer = new GridReaderLayer(mosaicReader, createDefaultRasterStyle());
+            return mosaicReaderLayer.getReader().read(null);
+        }
     }
 
     private GridReaderLayer createGridReaderLayer(final File imageFile) {
         final AbstractGridFormat satelliteFormat = GridFormatFinder.findFormat(imageFile);
 
+        final AbstractGridCoverage2DReader reader = satelliteFormat.getReader(imageFile);
         return new GridReaderLayer(
-                satelliteFormat.getReader(imageFile),
+                reader,
                 createDefaultRasterStyle()
         );
     }
@@ -130,23 +143,17 @@ public final class LidarImages {
         return result;
     }
 
-    public static void main(String[] args) throws IOException, FactoryException {
+    public static void main(String[] args) throws IOException {
         if (args.length != 1) {
             throw new IllegalArgumentException("Require location of satellite tiles to run.");
         }
 
-        final ReferencedEnvelope bounds = new ReferencedEnvelope(382270.0, 382290.0, 403020.0, 403040.0,  CRS.decode("EPSG:27700"));
+        final ReferencedEnvelope bounds = new ReferencedEnvelope(381350.0, 381370.0, 403530.0, 403550.0,  crs());
 
         final LidarImages factory = getLidarImages(new File(args[0]), "_DTM_25CM.asc");
-        final List<GridReaderLayer> layers = factory.findLayersForExtent(bounds);
-
-        System.out.println("Requires " + layers.size() + " layers");
-
-        final MapContent satelliteContent = new MapContent();
-        satelliteContent.setTitle("Survey Area");
-        layers.stream().forEach(l -> satelliteContent.addLayer(l));
-        satelliteContent.getViewport().setBounds(bounds);
-
-        ImageWriter.writeMap(satelliteContent, new File("output/test.jpg"), 1000, bounds);
+        GeoTiffOut.saveRaster(
+                factory.createLidarImage(bounds),
+                "output/test.tif"
+        );
     }
 }

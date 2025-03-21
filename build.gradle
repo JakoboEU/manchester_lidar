@@ -29,6 +29,7 @@ dependencies {
     implementation group: 'org.geotools', name: 'gt-coverage', version: "${geotoolsVersion}"
     implementation group: 'org.geotools', name: 'gt-arcgrid', version: "${geotoolsVersion}"
     implementation group: 'org.geotools.xsd', name: 'gt-xsd-sld', version: "${geotoolsVersion}"
+    implementation group: 'org.geotools', name: 'gt-imagemosaic', version: "${geotoolsVersion}"
 
     implementation 'org.apache.commons:commons-csv:1.8'
 }

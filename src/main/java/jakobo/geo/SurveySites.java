@@ -12,6 +12,7 @@ import java.io.IOException;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.stream.Stream;
 
 public class SurveySites {
 
@@ -45,5 +46,9 @@ public class SurveySites {
 
         System.out.println("Added " + surveySites.size() + " survey sites.");
         return new SurveySites(surveySites);
+    }
+
+    public Stream<SurveySite> sites() {
+        return sites.values().stream();
     }
 }

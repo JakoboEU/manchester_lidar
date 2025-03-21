@@ -1,7 +1,12 @@
 package jakobo;
 
+import jakobo.factory.GroundCoverFactory;
 import jakobo.geo.LidarImages;
 import jakobo.geo.SurveySites;
+import jakobo.util.BufferedImageFactory;
+import jakobo.util.GeoTiffOut;
+import jakobo.util.GridCoverage2DSupport;
+import org.geotools.geometry.jts.ReferencedEnvelope;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -23,6 +28,23 @@ public class Application {
         final SurveySites surveyGrids = SurveySites.loadFromFile(args[2]);
         final LidarImages terrain = LidarImages.getLidarImages(terrainRasterDir, "_DTM_25CM.asc");
         final LidarImages surface = LidarImages.getLidarImages(surfaceRasterDir, "_DSM_25CM.asc");
+
+        surveyGrids.sites().forEach(site -> {
+            final ReferencedEnvelope bounds = site.toReferencedEnvelope(0);
+            try {
+                GeoTiffOut.saveRaster(
+                        GroundCoverFactory.createGroundCover(
+                                site.getTitle(),
+                                terrain.createLidarImage(bounds),
+                                surface.createLidarImage(bounds),
+                                bounds
+                        ),
+                        "./output/" + site.getTitle() + ".tif"
+                );
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        });
     }
 
     private static File verifyDirectory(final String type, final String directory) throws FileNotFoundException {
