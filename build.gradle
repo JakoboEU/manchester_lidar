@@ -1,0 +1,32 @@
+repositories {
+    maven {
+        url 'https://repo.osgeo.org/repository/release/'
+    }
+    mavenCentral()
+}
+
+apply plugin: 'java'
+apply plugin: 'idea'
+
+idea {
+    module {
+        outputDir file("$buildDir/classes/main")
+        testOutputDir file("$buildDir/classes/test")
+    }
+}
+
+dependencies {
+    implementation 'com.google.guava:guava:32.0.0-jre'
+
+    implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.12.0'
+    implementation group: 'org.geotools', name: 'gt-main', version: "${geotoolsVersion}", ext: 'pom'
+    implementation group: 'org.geotools', name: 'gt-shapefile', version: "${geotoolsVersion}"
+    implementation group: 'org.geotools', name: 'gt-epsg-hsql', version: "${geotoolsVersion}"
+    implementation group: 'org.geotools', name: 'gt-epsg-wkt', version: "${geotoolsVersion}"
+    implementation group: 'org.geotools', name: 'gt-geotiff', version: "${geotoolsVersion}"
+    implementation group: 'org.geotools', name: 'gt-image', version: "${geotoolsVersion}"
+    implementation group: 'org.geotools', name: 'gt-render', version: "${geotoolsVersion}"
+    implementation group: 'org.geotools.xsd', name: 'gt-xsd-sld', version: "${geotoolsVersion}"
+
+    implementation 'com.itextpdf:itextpdf:5.5.13.3'
+}
