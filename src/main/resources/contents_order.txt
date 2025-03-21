@@ -1,0 +1,1313 @@
+********************************************************************
+
+EDINA DIGIMAP:
+
+DIGITAL DATA SUPPLY
+
+********************************************************************
+
+
+This data is distributed under licence by:
+
+    EDINA
+    University of Edinburgh
+    https://edina.ac.uk
+
+    Tel:    0131 650 3302
+    Fax:    0131 650 3308
+    Email:  digimap@ed.ac.uk
+		
+
+
+---------------------------------------------------------
+
+CONTENTS
+
+You will have received the data files listed below, each product and area has
+its own folder. Note that each data folder contains a conditions.txt file
+which states the conditions for use of the data within. These conditions can
+vary between different data products.
+
+
+
+-------------------------------------------------------------------------------
+Folder:           england-dtm-25cm_5925601
+Extent:           373877.2495969746, 387929.359192752 - 393797.0739327846, 407230.1329331438
+Date Ordered:     21 March 2025 at 09:18:29
+Product:          Lidar Composite Digital Terrain Model England 25cm resolution
+Version:          Composite
+Format:           ASC
+Theme:            N/A
+Area:             105 tiles
+Tiles:
+ 
+Tile Name:        sd7703
+Extent:           377000.0, 403000.0 - 378000.0, 404000.0
+Last Amended:     14 October 2010
+Start Date Flown: 2005-03-05
+End Date Flown:   2010-10-14
+   
+Tile Name:        sd7704
+Extent:           377000.0, 404000.0 - 378000.0, 405000.0
+Last Amended:     14 October 2010
+Start Date Flown: 2010-10-14
+End Date Flown:   2010-10-14
+   
+Tile Name:        sd7705
+Extent:           377000.0, 405000.0 - 378000.0, 406000.0
+Last Amended:     14 October 2010
+Start Date Flown: 2010-10-14
+End Date Flown:   2010-10-14
+   
+Tile Name:        sd7802
+Extent:           378000.0, 402000.0 - 379000.0, 403000.0
+Last Amended:     1 February 2013
+Start Date Flown: 2013-02-01
+End Date Flown:   2013-02-01
+   
+Tile Name:        sd7803
+Extent:           378000.0, 403000.0 - 379000.0, 404000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2005-03-05
+End Date Flown:   2011-07-12
+   
+Tile Name:        sd7804
+Extent:           378000.0, 404000.0 - 379000.0, 405000.0
+Last Amended:     14 March 2016
+Start Date Flown: 2016-03-14
+End Date Flown:   2016-03-14
+   
+Tile Name:        sd7805
+Extent:           378000.0, 405000.0 - 379000.0, 406000.0
+Last Amended:     14 October 2010
+Start Date Flown: 2009-02-18
+End Date Flown:   2010-10-14
+   
+Tile Name:        sd7900
+Extent:           379000.0, 400000.0 - 380000.0, 401000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2007-05-04
+End Date Flown:   2011-07-12
+   
+Tile Name:        sd7901
+Extent:           379000.0, 401000.0 - 380000.0, 402000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2007-05-04
+End Date Flown:   2011-07-12
+   
+Tile Name:        sd7902
+Extent:           379000.0, 402000.0 - 380000.0, 403000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2005-03-05
+End Date Flown:   2011-07-12
+   
+Tile Name:        sd7903
+Extent:           379000.0, 403000.0 - 380000.0, 404000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2005-03-05
+End Date Flown:   2011-07-12
+   
+Tile Name:        sd7904
+Extent:           379000.0, 404000.0 - 380000.0, 405000.0
+Last Amended:     14 October 2010
+Start Date Flown: 2010-10-14
+End Date Flown:   2010-10-14
+   
+Tile Name:        sd7905
+Extent:           379000.0, 405000.0 - 380000.0, 406000.0
+Last Amended:     14 October 2010
+Start Date Flown: 2009-02-18
+End Date Flown:   2010-10-14
+   
+Tile Name:        sd8000
+Extent:           380000.0, 400000.0 - 381000.0, 401000.0
+Last Amended:     1 February 2013
+Start Date Flown: 2009-02-18
+End Date Flown:   2013-02-01
+   
+Tile Name:        sd8001
+Extent:           380000.0, 401000.0 - 381000.0, 402000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2009-02-18
+End Date Flown:   2011-07-12
+   
+Tile Name:        sd8002
+Extent:           380000.0, 402000.0 - 381000.0, 403000.0
+Last Amended:     1 February 2013
+Start Date Flown: 2009-02-18
+End Date Flown:   2013-02-01
+   
+Tile Name:        sd8003
+Extent:           380000.0, 403000.0 - 381000.0, 404000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2009-02-18
+End Date Flown:   2011-07-12
+   
+Tile Name:        sd8004
+Extent:           380000.0, 404000.0 - 381000.0, 405000.0
+Last Amended:     14 October 2010
+Start Date Flown: 2009-02-18
+End Date Flown:   2009-02-18
+   
+Tile Name:        sd8005
+Extent:           380000.0, 405000.0 - 381000.0, 406000.0
+Last Amended:     14 October 2010
+Start Date Flown: 2010-10-14
+End Date Flown:   2010-10-14
+   
+Tile Name:        sd8100
+Extent:           381000.0, 400000.0 - 382000.0, 401000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2009-02-18
+End Date Flown:   2011-07-12
+   
+Tile Name:        sd8101
+Extent:           381000.0, 401000.0 - 382000.0, 402000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2007-05-04
+End Date Flown:   2011-07-12
+   
+Tile Name:        sd8102
+Extent:           381000.0, 402000.0 - 382000.0, 403000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2009-02-18
+End Date Flown:   2011-07-12
+   
+Tile Name:        sd8103
+Extent:           381000.0, 403000.0 - 382000.0, 404000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2009-02-18
+End Date Flown:   2011-07-12
+   
+Tile Name:        sd8104
+Extent:           381000.0, 404000.0 - 382000.0, 405000.0
+Last Amended:     14 October 2010
+Start Date Flown: 2003-04-07
+End Date Flown:   2010-10-14
+   
+Tile Name:        sd8105
+Extent:           381000.0, 405000.0 - 382000.0, 406000.0
+Last Amended:     14 October 2010
+Start Date Flown: 2010-10-14
+End Date Flown:   2010-10-14
+   
+Tile Name:        sd8200
+Extent:           382000.0, 400000.0 - 383000.0, 401000.0
+Last Amended:     1 February 2013
+Start Date Flown: 2009-02-18
+End Date Flown:   2013-02-01
+   
+Tile Name:        sd8201
+Extent:           382000.0, 401000.0 - 383000.0, 402000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2009-02-18
+End Date Flown:   2011-07-12
+   
+Tile Name:        sd8202
+Extent:           382000.0, 402000.0 - 383000.0, 403000.0
+Last Amended:     1 February 2013
+Start Date Flown: 2009-02-18
+End Date Flown:   2013-02-01
+   
+Tile Name:        sd8203
+Extent:           382000.0, 403000.0 - 383000.0, 404000.0
+Last Amended:     14 October 2010
+Start Date Flown: 2003-04-05
+End Date Flown:   2010-10-14
+   
+Tile Name:        sd8204
+Extent:           382000.0, 404000.0 - 383000.0, 405000.0
+Last Amended:     1 February 2013
+Start Date Flown: 2013-02-01
+End Date Flown:   2013-02-01
+   
+Tile Name:        sd8300
+Extent:           383000.0, 400000.0 - 384000.0, 401000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2002-02-07
+End Date Flown:   2011-07-12
+   
+Tile Name:        sd8301
+Extent:           383000.0, 401000.0 - 384000.0, 402000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2009-02-18
+End Date Flown:   2011-07-12
+   
+Tile Name:        sj7693
+Extent:           376000.0, 393000.0 - 377000.0, 394000.0
+Last Amended:     6 October 2013
+Start Date Flown: 2003-12-11
+End Date Flown:   2013-10-06
+   
+Tile Name:        sj7792
+Extent:           377000.0, 392000.0 - 378000.0, 393000.0
+Last Amended:     6 October 2013
+Start Date Flown: 2003-12-11
+End Date Flown:   2013-10-06
+   
+Tile Name:        sj7793
+Extent:           377000.0, 393000.0 - 378000.0, 394000.0
+Last Amended:     6 October 2013
+Start Date Flown: 2003-12-11
+End Date Flown:   2013-10-06
+   
+Tile Name:        sj7795
+Extent:           377000.0, 395000.0 - 378000.0, 396000.0
+Last Amended:     6 October 2013
+Start Date Flown: 2013-10-06
+End Date Flown:   2013-10-06
+   
+Tile Name:        sj7892
+Extent:           378000.0, 392000.0 - 379000.0, 393000.0
+Last Amended:     25 March 2016
+Start Date Flown: 2016-03-25
+End Date Flown:   2016-03-25
+   
+Tile Name:        sj7893
+Extent:           378000.0, 393000.0 - 379000.0, 394000.0
+Last Amended:     6 October 2013
+Start Date Flown: 2013-10-06
+End Date Flown:   2013-10-06
+   
+Tile Name:        sj7894
+Extent:           378000.0, 394000.0 - 379000.0, 395000.0
+Last Amended:     25 March 2016
+Start Date Flown: 2016-03-25
+End Date Flown:   2016-03-25
+   
+Tile Name:        sj7895
+Extent:           378000.0, 395000.0 - 379000.0, 396000.0
+Last Amended:     6 October 2013
+Start Date Flown: 2002-02-07
+End Date Flown:   2013-10-06
+   
+Tile Name:        sj7896
+Extent:           378000.0, 396000.0 - 379000.0, 397000.0
+Last Amended:     1 February 2013
+Start Date Flown: 2011-03-24
+End Date Flown:   2013-02-01
+   
+Tile Name:        sj7897
+Extent:           378000.0, 397000.0 - 379000.0, 398000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2007-05-04
+End Date Flown:   2011-07-12
+   
+Tile Name:        sj7898
+Extent:           378000.0, 398000.0 - 379000.0, 399000.0
+Last Amended:     1 February 2013
+Start Date Flown: 2011-03-24
+End Date Flown:   2013-02-01
+   
+Tile Name:        sj7992
+Extent:           379000.0, 392000.0 - 380000.0, 393000.0
+Last Amended:     6 October 2013
+Start Date Flown: 2003-12-11
+End Date Flown:   2013-10-06
+   
+Tile Name:        sj7993
+Extent:           379000.0, 393000.0 - 380000.0, 394000.0
+Last Amended:     6 October 2013
+Start Date Flown: 2003-12-11
+End Date Flown:   2013-10-06
+   
+Tile Name:        sj7994
+Extent:           379000.0, 394000.0 - 380000.0, 395000.0
+Last Amended:     6 October 2013
+Start Date Flown: 2003-12-11
+End Date Flown:   2013-10-06
+   
+Tile Name:        sj7995
+Extent:           379000.0, 395000.0 - 380000.0, 396000.0
+Last Amended:     6 October 2013
+Start Date Flown: 2002-02-07
+End Date Flown:   2013-10-06
+   
+Tile Name:        sj7996
+Extent:           379000.0, 396000.0 - 380000.0, 397000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2011-03-24
+End Date Flown:   2011-07-12
+   
+Tile Name:        sj7997
+Extent:           379000.0, 397000.0 - 380000.0, 398000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2007-05-04
+End Date Flown:   2011-07-12
+   
+Tile Name:        sj7998
+Extent:           379000.0, 398000.0 - 380000.0, 399000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2011-03-24
+End Date Flown:   2011-07-12
+   
+Tile Name:        sj7999
+Extent:           379000.0, 399000.0 - 380000.0, 400000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2007-05-04
+End Date Flown:   2011-07-12
+   
+Tile Name:        sj8092
+Extent:           380000.0, 392000.0 - 381000.0, 393000.0
+Last Amended:     25 March 2016
+Start Date Flown: 2016-03-25
+End Date Flown:   2016-03-25
+   
+Tile Name:        sj8093
+Extent:           380000.0, 393000.0 - 381000.0, 394000.0
+Last Amended:     6 October 2013
+Start Date Flown: 2002-02-07
+End Date Flown:   2013-10-06
+   
+Tile Name:        sj8095
+Extent:           380000.0, 395000.0 - 381000.0, 396000.0
+Last Amended:     6 October 2013
+Start Date Flown: 2002-02-07
+End Date Flown:   2013-10-06
+   
+Tile Name:        sj8096
+Extent:           380000.0, 396000.0 - 381000.0, 397000.0
+Last Amended:     1 February 2013
+Start Date Flown: 2011-03-24
+End Date Flown:   2013-02-01
+   
+Tile Name:        sj8097
+Extent:           380000.0, 397000.0 - 381000.0, 398000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2002-02-07
+End Date Flown:   2011-07-12
+   
+Tile Name:        sj8098
+Extent:           380000.0, 398000.0 - 381000.0, 399000.0
+Last Amended:     1 February 2013
+Start Date Flown: 2011-03-24
+End Date Flown:   2013-02-01
+   
+Tile Name:        sj8099
+Extent:           380000.0, 399000.0 - 381000.0, 400000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2009-02-18
+End Date Flown:   2011-07-12
+   
+Tile Name:        sj8189
+Extent:           381000.0, 389000.0 - 382000.0, 390000.0
+Last Amended:     6 October 2013
+Start Date Flown: 2002-02-07
+End Date Flown:   2013-10-06
+   
+Tile Name:        sj8191
+Extent:           381000.0, 391000.0 - 382000.0, 392000.0
+Last Amended:     6 October 2013
+Start Date Flown: 2002-02-07
+End Date Flown:   2013-10-06
+   
+Tile Name:        sj8192
+Extent:           381000.0, 392000.0 - 382000.0, 393000.0
+Last Amended:     6 October 2013
+Start Date Flown: 2002-02-07
+End Date Flown:   2013-10-06
+   
+Tile Name:        sj8193
+Extent:           381000.0, 393000.0 - 382000.0, 394000.0
+Last Amended:     6 October 2013
+Start Date Flown: 2002-02-07
+End Date Flown:   2013-10-06
+   
+Tile Name:        sj8194
+Extent:           381000.0, 394000.0 - 382000.0, 395000.0
+Last Amended:     6 October 2013
+Start Date Flown: 2002-02-07
+End Date Flown:   2013-10-06
+   
+Tile Name:        sj8195
+Extent:           381000.0, 395000.0 - 382000.0, 396000.0
+Last Amended:     6 October 2013
+Start Date Flown: 2002-02-07
+End Date Flown:   2013-10-06
+   
+Tile Name:        sj8196
+Extent:           381000.0, 396000.0 - 382000.0, 397000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2002-02-07
+End Date Flown:   2011-07-12
+   
+Tile Name:        sj8197
+Extent:           381000.0, 397000.0 - 382000.0, 398000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2002-02-07
+End Date Flown:   2011-07-12
+   
+Tile Name:        sj8198
+Extent:           381000.0, 398000.0 - 382000.0, 399000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2009-02-18
+End Date Flown:   2011-07-12
+   
+Tile Name:        sj8199
+Extent:           381000.0, 399000.0 - 382000.0, 400000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2009-02-18
+End Date Flown:   2011-07-12
+   
+Tile Name:        sj8288
+Extent:           382000.0, 388000.0 - 383000.0, 389000.0
+Last Amended:     25 March 2016
+Start Date Flown: 2016-03-25
+End Date Flown:   2016-03-25
+   
+Tile Name:        sj8289
+Extent:           382000.0, 389000.0 - 383000.0, 390000.0
+Last Amended:     6 October 2013
+Start Date Flown: 2013-10-06
+End Date Flown:   2013-10-06
+   
+Tile Name:        sj8290
+Extent:           382000.0, 390000.0 - 383000.0, 391000.0
+Last Amended:     25 March 2016
+Start Date Flown: 2016-03-25
+End Date Flown:   2016-03-25
+   
+Tile Name:        sj8291
+Extent:           382000.0, 391000.0 - 383000.0, 392000.0
+Last Amended:     6 October 2013
+Start Date Flown: 2002-02-07
+End Date Flown:   2013-10-06
+   
+Tile Name:        sj8292
+Extent:           382000.0, 392000.0 - 383000.0, 393000.0
+Last Amended:     25 March 2016
+Start Date Flown: 2016-03-25
+End Date Flown:   2016-03-25
+   
+Tile Name:        sj8293
+Extent:           382000.0, 393000.0 - 383000.0, 394000.0
+Last Amended:     6 October 2013
+Start Date Flown: 2002-02-07
+End Date Flown:   2013-10-06
+   
+Tile Name:        sj8294
+Extent:           382000.0, 394000.0 - 383000.0, 395000.0
+Last Amended:     25 March 2016
+Start Date Flown: 2016-03-25
+End Date Flown:   2016-03-25
+   
+Tile Name:        sj8296
+Extent:           382000.0, 396000.0 - 383000.0, 397000.0
+Last Amended:     1 December 2015
+Start Date Flown: 2011-03-24
+End Date Flown:   2015-12-01
+   
+Tile Name:        sj8297
+Extent:           382000.0, 397000.0 - 383000.0, 398000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2002-02-07
+End Date Flown:   2011-07-12
+   
+Tile Name:        sj8298
+Extent:           382000.0, 398000.0 - 383000.0, 399000.0
+Last Amended:     1 February 2013
+Start Date Flown: 2009-02-18
+End Date Flown:   2013-02-01
+   
+Tile Name:        sj8299
+Extent:           382000.0, 399000.0 - 383000.0, 400000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2009-02-18
+End Date Flown:   2011-07-12
+   
+Tile Name:        sj8388
+Extent:           383000.0, 388000.0 - 384000.0, 389000.0
+Last Amended:     6 October 2013
+Start Date Flown: 2002-02-07
+End Date Flown:   2013-10-06
+   
+Tile Name:        sj8389
+Extent:           383000.0, 389000.0 - 384000.0, 390000.0
+Last Amended:     1 December 2015
+Start Date Flown: 2015-12-01
+End Date Flown:   2015-12-01
+   
+Tile Name:        sj8390
+Extent:           383000.0, 390000.0 - 384000.0, 391000.0
+Last Amended:     6 October 2013
+Start Date Flown: 2002-02-07
+End Date Flown:   2013-10-06
+   
+Tile Name:        sj8391
+Extent:           383000.0, 391000.0 - 384000.0, 392000.0
+Last Amended:     6 October 2013
+Start Date Flown: 2013-10-06
+End Date Flown:   2013-10-06
+   
+Tile Name:        sj8392
+Extent:           383000.0, 392000.0 - 384000.0, 393000.0
+Last Amended:     6 October 2013
+Start Date Flown: 2013-10-06
+End Date Flown:   2013-10-06
+   
+Tile Name:        sj8396
+Extent:           383000.0, 396000.0 - 384000.0, 397000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2002-02-07
+End Date Flown:   2011-07-12
+   
+Tile Name:        sj8397
+Extent:           383000.0, 397000.0 - 384000.0, 398000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2009-02-18
+End Date Flown:   2011-07-12
+   
+Tile Name:        sj8398
+Extent:           383000.0, 398000.0 - 384000.0, 399000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2002-02-07
+End Date Flown:   2011-07-12
+   
+Tile Name:        sj8399
+Extent:           383000.0, 399000.0 - 384000.0, 400000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2002-02-07
+End Date Flown:   2011-07-12
+   
+Tile Name:        sj8488
+Extent:           384000.0, 388000.0 - 385000.0, 389000.0
+Last Amended:     25 March 2016
+Start Date Flown: 2016-03-25
+End Date Flown:   2016-03-25
+   
+Tile Name:        sj8489
+Extent:           384000.0, 389000.0 - 385000.0, 390000.0
+Last Amended:     1 December 2015
+Start Date Flown: 2015-12-01
+End Date Flown:   2015-12-01
+   
+Tile Name:        sj8490
+Extent:           384000.0, 390000.0 - 385000.0, 391000.0
+Last Amended:     25 March 2016
+Start Date Flown: 2016-03-25
+End Date Flown:   2016-03-25
+   
+Tile Name:        sj8491
+Extent:           384000.0, 391000.0 - 385000.0, 392000.0
+Last Amended:     6 October 2013
+Start Date Flown: 2002-02-07
+End Date Flown:   2013-10-06
+   
+Tile Name:        sj8496
+Extent:           384000.0, 396000.0 - 385000.0, 397000.0
+Last Amended:     1 December 2015
+Start Date Flown: 2009-02-18
+End Date Flown:   2015-12-01
+   
+Tile Name:        sj8497
+Extent:           384000.0, 397000.0 - 385000.0, 398000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2002-02-07
+End Date Flown:   2011-07-12
+   
+Tile Name:        sj8498
+Extent:           384000.0, 398000.0 - 385000.0, 399000.0
+Last Amended:     1 February 2013
+Start Date Flown: 2009-02-18
+End Date Flown:   2013-02-01
+   
+Tile Name:        sj8499
+Extent:           384000.0, 399000.0 - 385000.0, 400000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2002-02-07
+End Date Flown:   2011-07-12
+   
+Tile Name:        sj8588
+Extent:           385000.0, 388000.0 - 386000.0, 389000.0
+Last Amended:     1 December 2015
+Start Date Flown: 2015-12-01
+End Date Flown:   2015-12-01
+   
+Tile Name:        sj8589
+Extent:           385000.0, 389000.0 - 386000.0, 390000.0
+Last Amended:     1 December 2015
+Start Date Flown: 2015-12-01
+End Date Flown:   2015-12-01
+   
+Tile Name:        sj8590
+Extent:           385000.0, 390000.0 - 386000.0, 391000.0
+Last Amended:     6 October 2013
+Start Date Flown: 2002-02-07
+End Date Flown:   2013-10-06
+   
+Tile Name:        sj8689
+Extent:           386000.0, 389000.0 - 387000.0, 390000.0
+Last Amended:     1 December 2015
+Start Date Flown: 2015-12-01
+End Date Flown:   2015-12-01
+   
+Tile Name:        sj8690
+Extent:           386000.0, 390000.0 - 387000.0, 391000.0
+Last Amended:     25 March 2016
+Start Date Flown: 2016-03-25
+End Date Flown:   2016-03-25
+   
+Tile Name:        sj8789
+Extent:           387000.0, 389000.0 - 388000.0, 390000.0
+Last Amended:     1 December 2015
+Start Date Flown: 2015-12-01
+End Date Flown:   2015-12-01
+   
+Tile Name:        sj8790
+Extent:           387000.0, 390000.0 - 388000.0, 391000.0
+Last Amended:     6 October 2013
+Start Date Flown: 2002-02-07
+End Date Flown:   2013-10-06
+   
+Tile Name:        sj8889
+Extent:           388000.0, 389000.0 - 389000.0, 390000.0
+Last Amended:     6 October 2013
+Start Date Flown: 2002-02-07
+End Date Flown:   2013-10-06
+   
+Tile Name:        sj8890
+Extent:           388000.0, 390000.0 - 389000.0, 391000.0
+Last Amended:     25 March 2016
+Start Date Flown: 2016-03-25
+End Date Flown:   2016-03-25
+     -------------------------------------------------------------------------------
+Folder:           england-dsm-25cm_5925600
+Extent:           373877.2495969746, 387929.359192752 - 393797.0739327846, 407230.1329331438
+Date Ordered:     21 March 2025 at 09:18:29
+Product:          Lidar Composite Digital Surface Model England 25cm resolution
+Version:          Composite
+Format:           ASC
+Theme:            N/A
+Area:             105 tiles
+Tiles:
+ 
+Tile Name:        sd7703
+Extent:           377000.0, 403000.0 - 378000.0, 404000.0
+Last Amended:     14 October 2010
+Start Date Flown: 2005-03-05
+End Date Flown:   2010-10-14
+   
+Tile Name:        sd7704
+Extent:           377000.0, 404000.0 - 378000.0, 405000.0
+Last Amended:     14 October 2010
+Start Date Flown: 2010-10-14
+End Date Flown:   2010-10-14
+   
+Tile Name:        sd7705
+Extent:           377000.0, 405000.0 - 378000.0, 406000.0
+Last Amended:     14 October 2010
+Start Date Flown: 2010-10-14
+End Date Flown:   2010-10-14
+   
+Tile Name:        sd7802
+Extent:           378000.0, 402000.0 - 379000.0, 403000.0
+Last Amended:     1 February 2013
+Start Date Flown: 2013-02-01
+End Date Flown:   2013-02-01
+   
+Tile Name:        sd7803
+Extent:           378000.0, 403000.0 - 379000.0, 404000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2005-03-05
+End Date Flown:   2011-07-12
+   
+Tile Name:        sd7804
+Extent:           378000.0, 404000.0 - 379000.0, 405000.0
+Last Amended:     14 March 2016
+Start Date Flown: 2016-03-14
+End Date Flown:   2016-03-14
+   
+Tile Name:        sd7805
+Extent:           378000.0, 405000.0 - 379000.0, 406000.0
+Last Amended:     14 October 2010
+Start Date Flown: 2009-02-18
+End Date Flown:   2010-10-14
+   
+Tile Name:        sd7900
+Extent:           379000.0, 400000.0 - 380000.0, 401000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2007-05-04
+End Date Flown:   2011-07-12
+   
+Tile Name:        sd7901
+Extent:           379000.0, 401000.0 - 380000.0, 402000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2007-05-04
+End Date Flown:   2011-07-12
+   
+Tile Name:        sd7902
+Extent:           379000.0, 402000.0 - 380000.0, 403000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2005-03-05
+End Date Flown:   2011-07-12
+   
+Tile Name:        sd7903
+Extent:           379000.0, 403000.0 - 380000.0, 404000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2005-03-05
+End Date Flown:   2011-07-12
+   
+Tile Name:        sd7904
+Extent:           379000.0, 404000.0 - 380000.0, 405000.0
+Last Amended:     14 October 2010
+Start Date Flown: 2010-10-14
+End Date Flown:   2010-10-14
+   
+Tile Name:        sd7905
+Extent:           379000.0, 405000.0 - 380000.0, 406000.0
+Last Amended:     14 October 2010
+Start Date Flown: 2009-02-18
+End Date Flown:   2010-10-14
+   
+Tile Name:        sd8000
+Extent:           380000.0, 400000.0 - 381000.0, 401000.0
+Last Amended:     1 February 2013
+Start Date Flown: 2009-02-18
+End Date Flown:   2013-02-01
+   
+Tile Name:        sd8001
+Extent:           380000.0, 401000.0 - 381000.0, 402000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2009-02-18
+End Date Flown:   2011-07-12
+   
+Tile Name:        sd8002
+Extent:           380000.0, 402000.0 - 381000.0, 403000.0
+Last Amended:     1 February 2013
+Start Date Flown: 2009-02-18
+End Date Flown:   2013-02-01
+   
+Tile Name:        sd8003
+Extent:           380000.0, 403000.0 - 381000.0, 404000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2009-02-18
+End Date Flown:   2011-07-12
+   
+Tile Name:        sd8004
+Extent:           380000.0, 404000.0 - 381000.0, 405000.0
+Last Amended:     14 October 2010
+Start Date Flown: 2009-02-18
+End Date Flown:   2009-02-18
+   
+Tile Name:        sd8005
+Extent:           380000.0, 405000.0 - 381000.0, 406000.0
+Last Amended:     14 October 2010
+Start Date Flown: 2010-10-14
+End Date Flown:   2010-10-14
+   
+Tile Name:        sd8100
+Extent:           381000.0, 400000.0 - 382000.0, 401000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2009-02-18
+End Date Flown:   2011-07-12
+   
+Tile Name:        sd8101
+Extent:           381000.0, 401000.0 - 382000.0, 402000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2007-05-04
+End Date Flown:   2011-07-12
+   
+Tile Name:        sd8102
+Extent:           381000.0, 402000.0 - 382000.0, 403000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2009-02-18
+End Date Flown:   2011-07-12
+   
+Tile Name:        sd8103
+Extent:           381000.0, 403000.0 - 382000.0, 404000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2009-02-18
+End Date Flown:   2011-07-12
+   
+Tile Name:        sd8104
+Extent:           381000.0, 404000.0 - 382000.0, 405000.0
+Last Amended:     14 October 2010
+Start Date Flown: 2003-04-07
+End Date Flown:   2010-10-14
+   
+Tile Name:        sd8105
+Extent:           381000.0, 405000.0 - 382000.0, 406000.0
+Last Amended:     14 October 2010
+Start Date Flown: 2010-10-14
+End Date Flown:   2010-10-14
+   
+Tile Name:        sd8200
+Extent:           382000.0, 400000.0 - 383000.0, 401000.0
+Last Amended:     1 February 2013
+Start Date Flown: 2009-02-18
+End Date Flown:   2013-02-01
+   
+Tile Name:        sd8201
+Extent:           382000.0, 401000.0 - 383000.0, 402000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2009-02-18
+End Date Flown:   2011-07-12
+   
+Tile Name:        sd8202
+Extent:           382000.0, 402000.0 - 383000.0, 403000.0
+Last Amended:     1 February 2013
+Start Date Flown: 2009-02-18
+End Date Flown:   2013-02-01
+   
+Tile Name:        sd8203
+Extent:           382000.0, 403000.0 - 383000.0, 404000.0
+Last Amended:     14 October 2010
+Start Date Flown: 2003-04-05
+End Date Flown:   2010-10-14
+   
+Tile Name:        sd8204
+Extent:           382000.0, 404000.0 - 383000.0, 405000.0
+Last Amended:     1 February 2013
+Start Date Flown: 2013-02-01
+End Date Flown:   2013-02-01
+   
+Tile Name:        sd8300
+Extent:           383000.0, 400000.0 - 384000.0, 401000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2002-02-07
+End Date Flown:   2011-07-12
+   
+Tile Name:        sd8301
+Extent:           383000.0, 401000.0 - 384000.0, 402000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2009-02-18
+End Date Flown:   2011-07-12
+   
+Tile Name:        sj7693
+Extent:           376000.0, 393000.0 - 377000.0, 394000.0
+Last Amended:     6 October 2013
+Start Date Flown: 2003-12-11
+End Date Flown:   2013-10-06
+   
+Tile Name:        sj7792
+Extent:           377000.0, 392000.0 - 378000.0, 393000.0
+Last Amended:     6 October 2013
+Start Date Flown: 2003-12-11
+End Date Flown:   2013-10-06
+   
+Tile Name:        sj7793
+Extent:           377000.0, 393000.0 - 378000.0, 394000.0
+Last Amended:     6 October 2013
+Start Date Flown: 2003-12-11
+End Date Flown:   2013-10-06
+   
+Tile Name:        sj7795
+Extent:           377000.0, 395000.0 - 378000.0, 396000.0
+Last Amended:     6 October 2013
+Start Date Flown: 2013-10-06
+End Date Flown:   2013-10-06
+   
+Tile Name:        sj7892
+Extent:           378000.0, 392000.0 - 379000.0, 393000.0
+Last Amended:     25 March 2016
+Start Date Flown: 2016-03-25
+End Date Flown:   2016-03-25
+   
+Tile Name:        sj7893
+Extent:           378000.0, 393000.0 - 379000.0, 394000.0
+Last Amended:     6 October 2013
+Start Date Flown: 2013-10-06
+End Date Flown:   2013-10-06
+   
+Tile Name:        sj7894
+Extent:           378000.0, 394000.0 - 379000.0, 395000.0
+Last Amended:     25 March 2016
+Start Date Flown: 2016-03-25
+End Date Flown:   2016-03-25
+   
+Tile Name:        sj7895
+Extent:           378000.0, 395000.0 - 379000.0, 396000.0
+Last Amended:     6 October 2013
+Start Date Flown: 2002-02-07
+End Date Flown:   2013-10-06
+   
+Tile Name:        sj7896
+Extent:           378000.0, 396000.0 - 379000.0, 397000.0
+Last Amended:     1 February 2013
+Start Date Flown: 2011-03-24
+End Date Flown:   2013-02-01
+   
+Tile Name:        sj7897
+Extent:           378000.0, 397000.0 - 379000.0, 398000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2007-05-04
+End Date Flown:   2011-07-12
+   
+Tile Name:        sj7898
+Extent:           378000.0, 398000.0 - 379000.0, 399000.0
+Last Amended:     1 February 2013
+Start Date Flown: 2011-03-24
+End Date Flown:   2013-02-01
+   
+Tile Name:        sj7992
+Extent:           379000.0, 392000.0 - 380000.0, 393000.0
+Last Amended:     6 October 2013
+Start Date Flown: 2003-12-11
+End Date Flown:   2013-10-06
+   
+Tile Name:        sj7993
+Extent:           379000.0, 393000.0 - 380000.0, 394000.0
+Last Amended:     6 October 2013
+Start Date Flown: 2003-12-11
+End Date Flown:   2013-10-06
+   
+Tile Name:        sj7994
+Extent:           379000.0, 394000.0 - 380000.0, 395000.0
+Last Amended:     6 October 2013
+Start Date Flown: 2003-12-11
+End Date Flown:   2013-10-06
+   
+Tile Name:        sj7995
+Extent:           379000.0, 395000.0 - 380000.0, 396000.0
+Last Amended:     6 October 2013
+Start Date Flown: 2002-02-07
+End Date Flown:   2013-10-06
+   
+Tile Name:        sj7996
+Extent:           379000.0, 396000.0 - 380000.0, 397000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2011-03-24
+End Date Flown:   2011-07-12
+   
+Tile Name:        sj7997
+Extent:           379000.0, 397000.0 - 380000.0, 398000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2007-05-04
+End Date Flown:   2011-07-12
+   
+Tile Name:        sj7998
+Extent:           379000.0, 398000.0 - 380000.0, 399000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2011-03-24
+End Date Flown:   2011-07-12
+   
+Tile Name:        sj7999
+Extent:           379000.0, 399000.0 - 380000.0, 400000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2007-05-04
+End Date Flown:   2011-07-12
+   
+Tile Name:        sj8092
+Extent:           380000.0, 392000.0 - 381000.0, 393000.0
+Last Amended:     25 March 2016
+Start Date Flown: 2016-03-25
+End Date Flown:   2016-03-25
+   
+Tile Name:        sj8093
+Extent:           380000.0, 393000.0 - 381000.0, 394000.0
+Last Amended:     6 October 2013
+Start Date Flown: 2002-02-07
+End Date Flown:   2013-10-06
+   
+Tile Name:        sj8095
+Extent:           380000.0, 395000.0 - 381000.0, 396000.0
+Last Amended:     6 October 2013
+Start Date Flown: 2002-02-07
+End Date Flown:   2013-10-06
+   
+Tile Name:        sj8096
+Extent:           380000.0, 396000.0 - 381000.0, 397000.0
+Last Amended:     1 February 2013
+Start Date Flown: 2011-03-24
+End Date Flown:   2013-02-01
+   
+Tile Name:        sj8097
+Extent:           380000.0, 397000.0 - 381000.0, 398000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2002-02-07
+End Date Flown:   2011-07-12
+   
+Tile Name:        sj8098
+Extent:           380000.0, 398000.0 - 381000.0, 399000.0
+Last Amended:     1 February 2013
+Start Date Flown: 2011-03-24
+End Date Flown:   2013-02-01
+   
+Tile Name:        sj8099
+Extent:           380000.0, 399000.0 - 381000.0, 400000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2009-02-18
+End Date Flown:   2011-07-12
+   
+Tile Name:        sj8189
+Extent:           381000.0, 389000.0 - 382000.0, 390000.0
+Last Amended:     6 October 2013
+Start Date Flown: 2002-02-07
+End Date Flown:   2013-10-06
+   
+Tile Name:        sj8191
+Extent:           381000.0, 391000.0 - 382000.0, 392000.0
+Last Amended:     6 October 2013
+Start Date Flown: 2002-02-07
+End Date Flown:   2013-10-06
+   
+Tile Name:        sj8192
+Extent:           381000.0, 392000.0 - 382000.0, 393000.0
+Last Amended:     6 October 2013
+Start Date Flown: 2002-02-07
+End Date Flown:   2013-10-06
+   
+Tile Name:        sj8193
+Extent:           381000.0, 393000.0 - 382000.0, 394000.0
+Last Amended:     6 October 2013
+Start Date Flown: 2002-02-07
+End Date Flown:   2013-10-06
+   
+Tile Name:        sj8194
+Extent:           381000.0, 394000.0 - 382000.0, 395000.0
+Last Amended:     6 October 2013
+Start Date Flown: 2002-02-07
+End Date Flown:   2013-10-06
+   
+Tile Name:        sj8195
+Extent:           381000.0, 395000.0 - 382000.0, 396000.0
+Last Amended:     6 October 2013
+Start Date Flown: 2002-02-07
+End Date Flown:   2013-10-06
+   
+Tile Name:        sj8196
+Extent:           381000.0, 396000.0 - 382000.0, 397000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2002-02-07
+End Date Flown:   2011-07-12
+   
+Tile Name:        sj8197
+Extent:           381000.0, 397000.0 - 382000.0, 398000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2002-02-07
+End Date Flown:   2011-07-12
+   
+Tile Name:        sj8198
+Extent:           381000.0, 398000.0 - 382000.0, 399000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2009-02-18
+End Date Flown:   2011-07-12
+   
+Tile Name:        sj8199
+Extent:           381000.0, 399000.0 - 382000.0, 400000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2009-02-18
+End Date Flown:   2011-07-12
+   
+Tile Name:        sj8288
+Extent:           382000.0, 388000.0 - 383000.0, 389000.0
+Last Amended:     25 March 2016
+Start Date Flown: 2016-03-25
+End Date Flown:   2016-03-25
+   
+Tile Name:        sj8289
+Extent:           382000.0, 389000.0 - 383000.0, 390000.0
+Last Amended:     6 October 2013
+Start Date Flown: 2013-10-06
+End Date Flown:   2013-10-06
+   
+Tile Name:        sj8290
+Extent:           382000.0, 390000.0 - 383000.0, 391000.0
+Last Amended:     25 March 2016
+Start Date Flown: 2016-03-25
+End Date Flown:   2016-03-25
+   
+Tile Name:        sj8291
+Extent:           382000.0, 391000.0 - 383000.0, 392000.0
+Last Amended:     6 October 2013
+Start Date Flown: 2002-02-07
+End Date Flown:   2013-10-06
+   
+Tile Name:        sj8292
+Extent:           382000.0, 392000.0 - 383000.0, 393000.0
+Last Amended:     25 March 2016
+Start Date Flown: 2016-03-25
+End Date Flown:   2016-03-25
+   
+Tile Name:        sj8293
+Extent:           382000.0, 393000.0 - 383000.0, 394000.0
+Last Amended:     6 October 2013
+Start Date Flown: 2002-02-07
+End Date Flown:   2013-10-06
+   
+Tile Name:        sj8294
+Extent:           382000.0, 394000.0 - 383000.0, 395000.0
+Last Amended:     25 March 2016
+Start Date Flown: 2016-03-25
+End Date Flown:   2016-03-25
+   
+Tile Name:        sj8296
+Extent:           382000.0, 396000.0 - 383000.0, 397000.0
+Last Amended:     1 December 2015
+Start Date Flown: 2011-03-24
+End Date Flown:   2015-12-01
+   
+Tile Name:        sj8297
+Extent:           382000.0, 397000.0 - 383000.0, 398000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2002-02-07
+End Date Flown:   2011-07-12
+   
+Tile Name:        sj8298
+Extent:           382000.0, 398000.0 - 383000.0, 399000.0
+Last Amended:     1 February 2013
+Start Date Flown: 2009-02-18
+End Date Flown:   2013-02-01
+   
+Tile Name:        sj8299
+Extent:           382000.0, 399000.0 - 383000.0, 400000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2009-02-18
+End Date Flown:   2011-07-12
+   
+Tile Name:        sj8388
+Extent:           383000.0, 388000.0 - 384000.0, 389000.0
+Last Amended:     6 October 2013
+Start Date Flown: 2002-02-07
+End Date Flown:   2013-10-06
+   
+Tile Name:        sj8389
+Extent:           383000.0, 389000.0 - 384000.0, 390000.0
+Last Amended:     1 December 2015
+Start Date Flown: 2015-12-01
+End Date Flown:   2015-12-01
+   
+Tile Name:        sj8390
+Extent:           383000.0, 390000.0 - 384000.0, 391000.0
+Last Amended:     6 October 2013
+Start Date Flown: 2002-02-07
+End Date Flown:   2013-10-06
+   
+Tile Name:        sj8391
+Extent:           383000.0, 391000.0 - 384000.0, 392000.0
+Last Amended:     6 October 2013
+Start Date Flown: 2013-10-06
+End Date Flown:   2013-10-06
+   
+Tile Name:        sj8392
+Extent:           383000.0, 392000.0 - 384000.0, 393000.0
+Last Amended:     6 October 2013
+Start Date Flown: 2013-10-06
+End Date Flown:   2013-10-06
+   
+Tile Name:        sj8396
+Extent:           383000.0, 396000.0 - 384000.0, 397000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2002-02-07
+End Date Flown:   2011-07-12
+   
+Tile Name:        sj8397
+Extent:           383000.0, 397000.0 - 384000.0, 398000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2009-02-18
+End Date Flown:   2011-07-12
+   
+Tile Name:        sj8398
+Extent:           383000.0, 398000.0 - 384000.0, 399000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2002-02-07
+End Date Flown:   2011-07-12
+   
+Tile Name:        sj8399
+Extent:           383000.0, 399000.0 - 384000.0, 400000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2002-02-07
+End Date Flown:   2011-07-12
+   
+Tile Name:        sj8488
+Extent:           384000.0, 388000.0 - 385000.0, 389000.0
+Last Amended:     25 March 2016
+Start Date Flown: 2016-03-25
+End Date Flown:   2016-03-25
+   
+Tile Name:        sj8489
+Extent:           384000.0, 389000.0 - 385000.0, 390000.0
+Last Amended:     1 December 2015
+Start Date Flown: 2015-12-01
+End Date Flown:   2015-12-01
+   
+Tile Name:        sj8490
+Extent:           384000.0, 390000.0 - 385000.0, 391000.0
+Last Amended:     25 March 2016
+Start Date Flown: 2016-03-25
+End Date Flown:   2016-03-25
+   
+Tile Name:        sj8491
+Extent:           384000.0, 391000.0 - 385000.0, 392000.0
+Last Amended:     6 October 2013
+Start Date Flown: 2002-02-07
+End Date Flown:   2013-10-06
+   
+Tile Name:        sj8496
+Extent:           384000.0, 396000.0 - 385000.0, 397000.0
+Last Amended:     1 December 2015
+Start Date Flown: 2009-02-18
+End Date Flown:   2015-12-01
+   
+Tile Name:        sj8497
+Extent:           384000.0, 397000.0 - 385000.0, 398000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2002-02-07
+End Date Flown:   2011-07-12
+   
+Tile Name:        sj8498
+Extent:           384000.0, 398000.0 - 385000.0, 399000.0
+Last Amended:     1 February 2013
+Start Date Flown: 2009-02-18
+End Date Flown:   2013-02-01
+   
+Tile Name:        sj8499
+Extent:           384000.0, 399000.0 - 385000.0, 400000.0
+Last Amended:     12 July 2011
+Start Date Flown: 2002-02-07
+End Date Flown:   2011-07-12
+   
+Tile Name:        sj8588
+Extent:           385000.0, 388000.0 - 386000.0, 389000.0
+Last Amended:     1 December 2015
+Start Date Flown: 2015-12-01
+End Date Flown:   2015-12-01
+   
+Tile Name:        sj8589
+Extent:           385000.0, 389000.0 - 386000.0, 390000.0
+Last Amended:     1 December 2015
+Start Date Flown: 2015-12-01
+End Date Flown:   2015-12-01
+   
+Tile Name:        sj8590
+Extent:           385000.0, 390000.0 - 386000.0, 391000.0
+Last Amended:     6 October 2013
+Start Date Flown: 2002-02-07
+End Date Flown:   2013-10-06
+   
+Tile Name:        sj8689
+Extent:           386000.0, 389000.0 - 387000.0, 390000.0
+Last Amended:     1 December 2015
+Start Date Flown: 2015-12-01
+End Date Flown:   2015-12-01
+   
+Tile Name:        sj8690
+Extent:           386000.0, 390000.0 - 387000.0, 391000.0
+Last Amended:     25 March 2016
+Start Date Flown: 2016-03-25
+End Date Flown:   2016-03-25
+   
+Tile Name:        sj8789
+Extent:           387000.0, 389000.0 - 388000.0, 390000.0
+Last Amended:     1 December 2015
+Start Date Flown: 2015-12-01
+End Date Flown:   2015-12-01
+   
+Tile Name:        sj8790
+Extent:           387000.0, 390000.0 - 388000.0, 391000.0
+Last Amended:     6 October 2013
+Start Date Flown: 2002-02-07
+End Date Flown:   2013-10-06
+   
+Tile Name:        sj8889
+Extent:           388000.0, 389000.0 - 389000.0, 390000.0
+Last Amended:     6 October 2013
+Start Date Flown: 2002-02-07
+End Date Flown:   2013-10-06
+   
+Tile Name:        sj8890
+Extent:           388000.0, 390000.0 - 389000.0, 391000.0
+Last Amended:     25 March 2016
+Start Date Flown: 2016-03-25
+End Date Flown:   2016-03-25
+      
