@@ -3,14 +3,14 @@ package jakobo;
 import jakobo.factory.GroundCoverFactory;
 import jakobo.geo.LidarImages;
 import jakobo.geo.SurveySites;
-import jakobo.util.BufferedImageFactory;
 import jakobo.util.GeoTiffOut;
-import jakobo.util.GridCoverage2DSupport;
+import org.geotools.coverage.grid.GridCoverage2D;
 import org.geotools.geometry.jts.ReferencedEnvelope;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.Optional;
 
 public class Application {
 
@@ -32,15 +32,21 @@ public class Application {
         surveyGrids.sites().forEach(site -> {
             final ReferencedEnvelope bounds = site.toReferencedEnvelope(0);
             try {
-                GeoTiffOut.saveRaster(
-                        GroundCoverFactory.createGroundCover(
-                                site.getTitle(),
-                                terrain.createLidarImage(bounds),
-                                surface.createLidarImage(bounds),
-                                bounds
-                        ),
-                        "./output/" + site.getTitle() + ".tif"
-                );
+                Optional<GridCoverage2D> terrainImage = terrain.createLidarImage(site.getTitle(), bounds);
+                Optional<GridCoverage2D> surfaceImage = surface.createLidarImage(site.getTitle(), bounds);
+                if (terrainImage.isPresent() && surfaceImage.isPresent()) {
+                    GeoTiffOut.saveRaster(
+                            GroundCoverFactory.createGroundCover(
+                                    site.getTitle(),
+                                    terrainImage.get(),
+                                    surfaceImage.get(),
+                                    bounds
+                            ),
+                            "./output/" + site.getTitle() + ".tif"
+                    );
+                } else {
+                    System.err.println("Could not create ground cover for " + site.getTitle() + " as missing lidar imagery.");
+                }
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }

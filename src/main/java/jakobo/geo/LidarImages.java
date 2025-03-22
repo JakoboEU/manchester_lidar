@@ -1,15 +1,14 @@
 package jakobo.geo;
 
 import jakobo.util.GeoTiffOut;
+import jakobo.util.MosaicCreator;
 import org.geotools.coverage.grid.GridCoverage2D;
 import org.geotools.coverage.grid.io.AbstractGridCoverage2DReader;
 import org.geotools.coverage.grid.io.AbstractGridFormat;
 import org.geotools.coverage.grid.io.GridFormatFinder;
 import org.geotools.geometry.jts.ReferencedEnvelope;
 import org.geotools.map.GridReaderLayer;
-import org.geotools.gce.imagemosaic.ImageMosaicReader;
 import org.geotools.util.factory.Hints;
-import org.opengis.referencing.FactoryException;
 
 import java.io.*;
 import java.util.*;
@@ -28,7 +27,7 @@ public final class LidarImages {
         this.images = images;
     }
 
-    public GridCoverage2D createLidarImage(final ReferencedEnvelope referencedEnvelope) throws IOException {
+    public Optional<GridCoverage2D> createLidarImage(final String title, final ReferencedEnvelope referencedEnvelope) throws IOException {
         if ((referencedEnvelope.getMaxX() - referencedEnvelope.getMinX()) >= MAX_EXPECTED_SATELLITE_TILE_SIZE_METERS ||
                 (referencedEnvelope.getMaxY() - referencedEnvelope.getMinY()) >= MAX_EXPECTED_SATELLITE_TILE_SIZE_METERS) {
             throw new IllegalArgumentException("Can only collect layers for envelopes less than 4000x4000m");
@@ -41,16 +40,18 @@ public final class LidarImages {
                 .map(i -> createGridReaderLayer(i.getImageFile()))
                 .toArray(size -> new GridReaderLayer[size]);
 
-        if (layers.length == 1) {
-            return layers[0].getReader().read(null);
+        if (layers.length == 0) {
+            System.err.println("Failed to find any layers for " + title + " in envelope " + referencedEnvelope);
+            return Optional.empty();
+        } else if (layers.length == 1) {
+            return Optional.of(layers[0].getReader().read(null));
         } else {
-            final ImageMosaicReader mosaicReader = new ImageMosaicReader(layers);
-            final GridReaderLayer mosaicReaderLayer = new GridReaderLayer(mosaicReader, createDefaultRasterStyle());
-            return mosaicReaderLayer.getReader().read(null);
+            return Optional.of(MosaicCreator.createMosaic(title, layers));
         }
     }
 
     private GridReaderLayer createGridReaderLayer(final File imageFile) {
+        System.out.println("Reading in file " + imageFile);
         final AbstractGridFormat satelliteFormat = GridFormatFinder.findFormat(imageFile);
 
         final AbstractGridCoverage2DReader reader = satelliteFormat.getReader(imageFile, new Hints(Hints.DEFAULT_COORDINATE_REFERENCE_SYSTEM, crs()));
@@ -142,18 +143,24 @@ public final class LidarImages {
         return result;
     }
 
-    public static void main(String[] args) throws IOException, FactoryException {
+    public static void main(String[] args) throws IOException {
         if (args.length != 1) {
             throw new IllegalArgumentException("Require location of satellite tiles to run.");
         }
 
         final ReferencedEnvelope bounds = new ReferencedEnvelope(381350.0, 381370.0, 403530.0, 403550.0,  crs());
+        final ReferencedEnvelope bounds_779_1 = new ReferencedEnvelope(386920.0, 386940.0, 400900.0, 400920.0,  crs());
 
         final LidarImages factory = getLidarImages(new File(args[0]), "_DTM_25CM.asc");
         GeoTiffOut.saveRaster(
-                factory.createLidarImage(bounds),
+                factory.createLidarImage("main", bounds).get(),
                 bounds,
                 "output/test.tif"
+        );
+        GeoTiffOut.saveRaster(
+                factory.createLidarImage("main", bounds_779_1).get(),
+                bounds_779_1,
+                "output/test_779_1.tif"
         );
     }
 }
