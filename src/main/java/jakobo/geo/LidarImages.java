@@ -1,16 +1,15 @@
 package jakobo.geo;
 
-import jakobo.util.BufferedImageFactory;
 import jakobo.util.GeoTiffOut;
-import jakobo.util.GridCoverage2DSupport;
 import org.geotools.coverage.grid.GridCoverage2D;
 import org.geotools.coverage.grid.io.AbstractGridCoverage2DReader;
 import org.geotools.coverage.grid.io.AbstractGridFormat;
 import org.geotools.coverage.grid.io.GridFormatFinder;
 import org.geotools.geometry.jts.ReferencedEnvelope;
 import org.geotools.map.GridReaderLayer;
-import org.geotools.map.MapContent;
 import org.geotools.gce.imagemosaic.ImageMosaicReader;
+import org.geotools.util.factory.Hints;
+import org.opengis.referencing.FactoryException;
 
 import java.io.*;
 import java.util.*;
@@ -54,7 +53,7 @@ public final class LidarImages {
     private GridReaderLayer createGridReaderLayer(final File imageFile) {
         final AbstractGridFormat satelliteFormat = GridFormatFinder.findFormat(imageFile);
 
-        final AbstractGridCoverage2DReader reader = satelliteFormat.getReader(imageFile);
+        final AbstractGridCoverage2DReader reader = satelliteFormat.getReader(imageFile, new Hints(Hints.DEFAULT_COORDINATE_REFERENCE_SYSTEM, crs()));
         return new GridReaderLayer(
                 reader,
                 createDefaultRasterStyle()
@@ -143,7 +142,7 @@ public final class LidarImages {
         return result;
     }
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, FactoryException {
         if (args.length != 1) {
             throw new IllegalArgumentException("Require location of satellite tiles to run.");
         }
@@ -153,6 +152,7 @@ public final class LidarImages {
         final LidarImages factory = getLidarImages(new File(args[0]), "_DTM_25CM.asc");
         GeoTiffOut.saveRaster(
                 factory.createLidarImage(bounds),
+                bounds,
                 "output/test.tif"
         );
     }
